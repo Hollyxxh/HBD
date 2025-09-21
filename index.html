@@ -24,7 +24,8 @@
     .gift-box {
       width: 150px;
       height: 150px;
-      background: url('GiftBox.png') no-repeat center/contain;
+      background: url('GiftBox.png') no-repeat center;
+      background-size: contain;
       cursor: pointer;
       margin-bottom: 20px;
     }
@@ -81,7 +82,9 @@
 </head>
 <body>
   <h1>🎂 Happy Birthday, Ma Khaing Lay! 🎂</h1>
-  <div class="gift-box" id="giftBox"></div>
+  <div class="gift-box" id="giftBox">
+    <img src="GiftBox.png" alt="Gift Box" width="150" height="150">
+  </div>
 
   <div class="gift-cards hidden" id="giftCards"></div>
 
